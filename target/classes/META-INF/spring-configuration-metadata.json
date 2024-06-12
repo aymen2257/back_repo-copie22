@@ -1,0 +1,50 @@
+{
+  "groups": [
+    {
+      "name": "app",
+      "type": "com.espaceadherent.config.AppProperties",
+      "sourceType": "com.espaceadherent.config.AppProperties"
+    },
+    {
+      "name": "app.auth",
+      "type": "com.espaceadherent.config.AppProperties$Auth",
+      "sourceType": "com.espaceadherent.config.AppProperties",
+      "sourceMethod": "getAuth()"
+    },
+    {
+      "name": "app.client",
+      "type": "com.espaceadherent.config.AppProperties$Client",
+      "sourceType": "com.espaceadherent.config.AppProperties",
+      "sourceMethod": "getClient()"
+    },
+    {
+      "name": "app.oauth2",
+      "type": "com.espaceadherent.config.AppProperties$OAuth2",
+      "sourceType": "com.espaceadherent.config.AppProperties",
+      "sourceMethod": "getOauth2()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "app.auth.token-expiration-msec",
+      "type": "java.lang.Long",
+      "sourceType": "com.espaceadherent.config.AppProperties$Auth"
+    },
+    {
+      "name": "app.auth.token-secret",
+      "type": "java.lang.String",
+      "sourceType": "com.espaceadherent.config.AppProperties$Auth"
+    },
+    {
+      "name": "app.client.base-url",
+      "type": "java.lang.String",
+      "sourceType": "com.espaceadherent.config.AppProperties$Client"
+    },
+    {
+      "name": "app.oauth2.authorized-redirect-uris",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.espaceadherent.config.AppProperties$OAuth2"
+    }
+  ],
+  "hints": []
+}
